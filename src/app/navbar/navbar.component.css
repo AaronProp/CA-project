@@ -1,0 +1,5 @@
+ img {
+    height: 30em; /* Altura específica */
+    object-fit: cover;
+    object-position: top
+}

@@ -1,0 +1,15 @@
+.tarjeta {
+ margin-top: 2em;
+}
+
+.card:hover{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
+
+.card-img-top:hover{
+    transform: scale(1.1);
+}
+
+.bi-heart:hover{
+    cursor: pointer;
+}

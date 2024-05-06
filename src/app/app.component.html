@@ -1,0 +1,40 @@
+
+@if (currentScreenSize=='Xsmall' || currentScreenSize=='Small') {
+    <app-mobile-navbar></app-mobile-navbar>
+}@else {
+    <app-navbar></app-navbar>
+}
+
+
+
+
+<div class="container">
+    @if (currentScreenSize=='Xsmall' || currentScreenSize=='Small') {
+        <div style="display: inline;"><h1 style="display: inline; font-size: 4em;">General </h1> <span style="display: inline; color: gray; font-size: 2em;">( {{products.length}} )</span> </div>
+    }
+    
+    <div class="row">
+        @for (product of products; track product._id) {
+            <div class="d-flex justify-content-around col-xs-6 col-sm-6 col-md-4 col-lg-3 tarjeta">
+                <div class="card position-relative" style="width: 18rem">
+                    <i class="bi bi-heart position-absolute" style="top: 10px; right: 10px; font-size: 24px; color: #000; z-index: 1;"></i>
+                    <img src="../assets/imgs/products/{{product.id}}.jpg" class="card-img-top" alt="..." style="min-height:25em; max-height: 25em;">
+                    <div class="card-body">
+                        <p class="card-text" style="min-height:5em; max-height: 5em;">{{product.descripcion}}</p>
+                        <p><b>Tallas </b>{{product.tallas.join(' ')}}</p>
+                        <div>
+                            @for (color of product.color.split(','); track $index) {
+                                <span style="padding: .2em;"><i class="bi bi-circle-fill" [style.color]="color"></i></span>
+                            }
+                        </div>
+                        <b>${{product.precio.toFixed(2)}}</b>
+                        
+                    </div>
+                </div>
+            </div> 
+        }
+    </div>
+</div>
+
+   
+
