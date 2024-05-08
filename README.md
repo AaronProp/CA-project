@@ -2,6 +2,7 @@
 ### Herramientas utilizadas
 - Angular
 - Bootstrap
+- Mongoose
 
 **Desarrollo del lado del cliente para la prueba tecnica del simulador de vista de ecommerce para la cadena C&A**
 
@@ -24,6 +25,7 @@ ng serve
 ### Explicacion de la razon de la eleccion de cada herramienta
 - Angular: Es el framwork recomendado en la prueba tecnica, y para apegarme lo mas posible se selecciono la herramienta.
 - Bootstrap: Para algunos de los usos del grid (no completamente) y la utilizacion de algunos de sus componentes e iconos.
+- Mongoose: Para la facilitar el fetch con MongoDB.
 
 ## Prueba del resultado (Vista de la pagina)
 ![unnamed](https://github.com/AaronProp/ca-project/assets/72943848/c72dbcde-d086-4d72-9c11-ead74cd0ca56)
