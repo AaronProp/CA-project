@@ -1,7 +1,7 @@
 ## FrontEnd en Angular
 ### Herramientas utilizadas
--Angular
--Bootstrap
+- Angular
+- Bootstrap
 
 **Desarrollo del lado del cliente para la prueba tecnica del simulador de vista de ecommerce para la cadena C&A**
 
